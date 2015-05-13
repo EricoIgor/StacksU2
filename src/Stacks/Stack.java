@@ -41,8 +41,7 @@ public class Stack implements InterfaceStackLinked{
     public No push(int value) {
         if (!empty()) {
         No aux = new No(value);
-        top++;
-        stack[top] = aux;
+        stack[++top] = aux;
         System.out.println("Element inserted: "+aux);
         return aux;
         }
